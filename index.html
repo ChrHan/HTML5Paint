@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Christoper Hans' Paint HTML5 Project</title>
+		<link rel="stylesheet" type="text/css" href="paint.css">
+		<script src="canvaspaint.js" type="text/javascript"></script>
+	</head>
+	<body onload="init()">
+		<p>
+			<label>Drawing tool: <select id="dtool">
+			<option value="rect">Rectangle</option>
+			<option value="pencil">Pencil</option>
+			<option value="line">Line</option>
+			<option value="circle">Circle</option>
+			</select></label>
+			
+			<label>Line Color:<input id="color" type="text" name="color" value="#000000"></input></label>
+			<label>Line Width:<input id="linewidth" type="text" name="linewidth" value="1"></input></label>
+			<label><button id="clearpage">Clear Page</button></label>
+		</p>
+		
+		<canvas id="paint" width="500" height="500" style="border:1px solid #c3c3c3;">
+		Your browser does not support the HTML5 canvas tag.
+		</canvas>
+		
+	</body>
+</html>
